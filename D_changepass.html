@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  
+<head>
+  <link rel="stylesheet" href="Style.css">
+   <link rel="stylesheet" href="pswd_style.css">
+</head>
+
+
+  <script>
+    function check()
+    {
+        var checkpass =document.val_form.pswd.value;
+        var checkcpass=document.val_form.cpswd.value;
+      
+        if(checkpass=="" || checkpass=="null")
+        alert("Invalid Password");
+        else if(checkpass.length<6)
+     
+        alert("Password must be at least 6 characters long.");
+        else
+            alert("Login sucessfull");
+    }
+  </script>
+
+  <body>
+        <!-- Nav Bar -->
+        <div class="menu-bar">
+          <h1 class="logo">foodfor<span>CHARITY</span></h1>
+          <ul>
+            <li><a href="Home.htm">Home</a></li>
+            <li><a href="AboutUs.htm">About Us</a></li>
+            <li><a href="Feedback.htm">Feedback</a> </li>
+            <li><a href="#">Sign Up<i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-menu">
+                    <ul>
+                      <li><a href="Donor_Reg_Form.html">Donor</a></li>
+                      <li><a href="Volunteer_Reg_Form.htm">Volunteer</a></li>               
+                    </ul>
+                </div>
+            </li>
+            <li><a href="#">Sign In<i class="fas fa-caret-down"></i></a>
+              <div class="dropdown-menu">
+                  <ul>
+                    <li><a href="D_Login.php">Donor</a></li>
+                    <li><a href="V_Login.htm">Volunteer</a></li>               
+                  </ul>
+              </div>
+          </li>
+            <!-- <li><a href="#">Contact us</a></li> -->
+          </ul>
+        </div>
+
+    <div class="container">
+      <form name="val_form" action="" method="post">
+      <form action="#">
+        <div class="title">Change Password</div>
+        <div class="input-box">
+          <input type="email" name="email" placeholder="Enter your Email-Id" required>
+          <div class="underline"></div>
+        </div>
+        <div class="input-box">
+          <input type="text" name="pswd" placeholder="Enter New Password" required>
+          <div class="underline"></div>
+        </div>
+        <div class="input-box">
+          <input type="password" name="cpswd" placeholder="Confirm Password" required>
+          <div class="underline"></div>
+        </div>
+       <div><br>
+
+        <div class="input-box button">
+          <input type="button" name="" value="submit" onclick="check();">
+        </div><br>   
+
+      </form>
+    </div>
+  </body>
+
+</html>
+

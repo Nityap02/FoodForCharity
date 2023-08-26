@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+html, body{
+  /* display: grid; */
+  height: 100vh;
+  width: 100%;
+  place-items: center;
+  background: linear-gradient(to right, #008080 0%, #5ba4b0 100%);
+  color: #008080;
+}   
+h1 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+.container{
+   
+    max-width: 700px;
+    margin-inline: auto;
+    padding: 25px 30px;
+     border-radius: 5px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.example-header{
+    flex-direction: column;
+    gap:10px;
+}
+
+.examples-area{
+    justify-content: space-between;
+    margin-block: 40px;
+}
+
+.example-card{
+    width: 35%;
+    position: relative;
+    min-height: 200px;
+    background: black;
+    background: linear-gradient(rgba(240, 231, 231, 0.1),rgb(247, 244, 244)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYxEVOUjiispDhpqKZjBtoUcEWSBQfTXcThg&usqp=CAU);
+    background-size: cover;
+}
+
+  
+.card-text{
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    color: white;
+}
+
+.card{
+  text-align: center;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    color: white;
+}
+
+ </style>
+</head>
+<body>
+    
+    <section class="examples-section">
+        <div class="container">
+            <div class="example-header flex">
+                <h1 class="example-heading-text">Mode of Donation</h1>
+                <!-- <a href="" class="secondary-button">See all features <i class="fa solid-regular fa-right-long"></i></a> -->
+            </div>
+            <div class="examples-area flex">
+                <a  href="Benificiary_Select.php" class="example-card" style=" background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)), url(Images/Byself.jpg);  background-repeat: no-repeat; background-size: cover; display: block;">
+                  <h3 class="card-text">By self</h3>
+                </a>
+                <a  href="Location.htm" class="example-card" style=" background: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)), url(Images/Requestforvolunteer.jpg);  background-repeat: no-repeat; background-size: cover;">
+                    <h3 class="card-text">Request for volunteer</h3>
+                  </a>
+                
+            </div>
+            <p align="center">Click to select the mode of food donation given above.</p>
+        </div>
+    </section>
+
+
+</body>
+</html>

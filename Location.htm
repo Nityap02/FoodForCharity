@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="refresh" content="20seconds" url="Donor_Reg_Form.html"> -->
+    <title>Location</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="food.css">
+
+    <!-- <script src="https://kit.fontawesome.com/0e255da9e2.js" crossorigin="anonymous"></script> -->
+</head>
+<body>
+            <!-- Nav Bar -->
+<div class="menu-bar">
+    <h1 class="logo">foodfor<span>CHARITY</span></h1>
+    <ul>
+      <li><a href="Home.htm">Home</a></li>
+      <li><a href="AboutUs.htm">About Us</a></li>
+      <li><a href="Feedback.htm">Feedback</a> </li>
+      <li><a href="#">Sign Up<i class="fas fa-caret-down"></i></a>
+          <div class="dropdown-menu">
+              <ul>
+                <li><a href="Donor_Reg_Form.html">Donor</a></li>
+                <li><a href="Volunteer_Reg_Form.htm">Volunteer</a></li>               
+              </ul>
+          </div>
+      </li>
+      <li><a href="#">Sign In<i class="fas fa-caret-down"></i></a>
+        <div class="dropdown-menu">
+            <ul>
+              <li><a href="D_Login.php">Donor</a></li>
+              <li><a href="V_Login.htm">Volunteer</a></li>               
+            </ul>
+        </div>
+    </li>
+      <!-- <li><a href="#">Contact us</a></li> -->
+    </ul>
+  </div>
+<div class="main">
+  <div class="aboutus">
+    <h1>Location</h1>
+        <form name="val_form" action="Home.htm">
+
+            <fieldset>
+            <legend>Provide Your Location</legend>
+            <textarea type="text" name="location" cols="49" rows="5" placeholder="Enter Your Location"></textarea>
+        </fieldset>
+    <input class="button" type="submit" name="submit" value="Submit" onclick="submitForm()">
+    </form>
+  </div>
+    </div>
+
+    <script>
+        function submitForm(){
+
+            var locn =document.val_form.location.value; 
+            
+            if(locn=="" || locn=="null"){
+            alert("Please Enter Your Location");
+            return false;
+            }
+            else{
+            alert("Your Request is Pending");
+            return true;
+            window.location.href="Home.htm";
+        }
+    }
+    </script>
+
+<script src="https://kit.fontawesome.com/0e255da9e2.js" crossorigin="anonymous"></script>   
+
+</body>
+</html>

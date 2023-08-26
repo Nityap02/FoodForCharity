@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beneficiary Details</title>
+    <link rel="stylesheet" href="Ben_styles.css">
+    
+    <script>
+        function myfunction(){
+            alert("Added Successfully");
+        }
+    </script>
+
+    <script src="https://kit.fontawesome.com/0e255da9e2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+<div class="feedback-container">
+    
+    <form method="post" action="Beneficiary.php">
+        <h1 style="color:#008080">Beneficiary Details</h1>
+        <div class="id">
+            <input type="text" name="B_Name" placeholder="Name" required>
+        </div>
+        <div class="id">
+            <textarea cols="10" rows="3" placeholder="Address" name="B_Address"></textarea>
+            </div>
+        <!-- <div class="id">
+            <input type="text" name="B_Address" placeholder="Address" required >  
+        </div> -->
+        <div class="id">
+            <input type="number" name="B_pin" placeholder="Pincode" required>  
+        </div>
+        <div class="id">
+            <input type="number" name="B_ContactNo" placeholder="Contact No" required> 
+        </div>
+        <div class="id">
+            <input type="file" name="B_Image" placeholder="Upload image">  
+        </div>
+        <button type="submit" value="Submit" onclick="myfunction();">Submit</button>
+    </form>
+    
+</div>
+</body>
+</html>
+    
+
+
+  

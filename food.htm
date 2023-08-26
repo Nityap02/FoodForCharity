@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Details</title>
+    <link rel="stylesheet" href="food.css">
+
+    
+<script>
+    function submitForm() {
+      location.replace("process.htm");
+    }
+    </script>
+
+ 
+</head>
+<body>
+<div class="main">
+    <h1>Food Details</h1>
+        <form action="javascript:void(0);">
+
+            <fieldset>
+                <legend><div class="number">1</div> Food Type:</legend>
+                <input type="radio" id="mince" name="filling"><label>Veg</label>
+                <input type="radio" id="lentils" name="filling"><label>Non-veg</label>
+            </fieldset>
+            <fieldset>
+            <legend><div class="number">2</div> Food Quanity: </legend>
+            Upto &nbsp;<select>
+                <option>5</option>
+                <option>10</option>
+                <option>15</option>
+                <option>20</option>
+                <option>40</option>
+                <option>50</option>
+                <option>60+</option>
+            </select> &nbsp; People
+        </fieldset>
+        <fieldset>
+            <legend><div class="number">3</div> Food Prepared Time:</legend>
+        <input type="time" id="mail" name="user_email" required><br>
+        </fieldset>
+    <input class="button" type="submit" value="Submit" onclick="submitForm()">
+    </form>
+    </div>
+    <div class="order">
+        <h1>Thanks for your donation!</h1>
+        <img>
+    </div>
+    <script src="https://kit.fontawesome.com/0e255da9e2.js" crossorigin="anonymous"></script>
+</body>
+</html>

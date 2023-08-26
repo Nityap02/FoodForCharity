@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background: linear-gradient(to right, #008080 0%, #5ba4b0 100%);
+	color:#005050;
+}
+
+.number {
+	padding: .3em;
+	text-align: center;
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	background-color: seashell;
+	border-radius: 50%;
+	color:#005050;
+}
+
+h1 {
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+	margin: 1em;
+	font-size: 2.5em;
+	/* text-shadow: 2px 2px 3px grey; */
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	background: #fff;
+	margin: 0 auto 2em;
+	border-radius: 1em;
+	padding: 1em 0;
+}
+
+input, 
+textarea {
+	border: none;
+	padding: .5em;
+	border-radius: .25em;
+}
+
+input:focus,
+input:hover {
+	background: seashell;
+	border-bottom: solid #008080 ;
+	outline: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+	margin-right: .25em;
+	width: 1em;
+	height: 1em;
+}
+
+fieldset {
+	border: none;
+	margin: .5em;
+}
+
+legend {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.4em;
+	font-weight: bold;
+	padding-bottom: .5em;
+}
+
+/* label, */
+/* .button {
+	font-family: 'Baloo Chettan 2', cursive;
+} */
+
+.button {
+	box-shadow: 2px 2px 1px black;
+	border: black;
+	background-color: #008080;
+	/* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239C92AC' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E"); */
+	 font-size: 1em;
+	align-self: center;
+ 	padding: .7em;
+	color: black;} 
+
+.button:hover {
+	cursor: pointer;
+	background: linear-gradient(to right, #008080 0%, #5ba4b0 100%);
+	color:#fff;
+	/* box-shadow: inset 2px 2px 5px 0px rgba(0,0,0,0.75); */
+}
+
+#name,
+#mail,
+#phone,
+textarea {
+	margin: .5em 0;
+	box-shadow: 1px 1px 2px grey;
+}
+
+.order {
+	display: none;
+	text-align: center;
+}
+
+img {
+		max-width: 100%;
+}
+
+@media (min-width: 550px) {
+	form {
+		max-width: 30%;
+	}
+}
